@@ -1,113 +1,129 @@
-# WeARM® v3.5RC - MANUEL DE RÉFÉRENCE & ARCHITECTURE
+# LABS 351 [SN] v3.51RC - MANUEL DE RÉFÉRENCE & ARCHITECTURE
 
-* **Core:** AETHER Deterministic Infrastructure (Slab-based)
-* **Target:** Multi-Platform System (ARM64 / x86_64)
-* **Compliance:** Low-latency Industrial Standards & Memory Sovereignty
+**Core Platform:** AETHER Deterministic Infrastructure (Slab-based)  
+**Target Architectures:** Multi-Platform System (ARM64 / x86_64 / RISC-V Bare Metal)  
+**Compliance:** Low-latency Industrial Standards & Memory Sovereignty  
+**Deployment:** Portable / Nomadic (Zero Installation)  
+
+---
 
 ## Sommaire
-1. [Introduction Technique](#1-introduction-technique)
-2. [Modèle de Licence](#2-modèle-de-licence)
-3. [Infrastructure de Calcul WeARM® AETHER](#3-infrastructure-de-calcul-aether)
-4. [Architecture Découplée & Plugins](#4-architecture-découplée--plugins-de-précision)
-5. [Le Trampoline : Surveillance & Diagnostic](#5-le-trampoline--surveillance--diagnostic)
-6. [Architecture VFS & Gestion des Sources](#6-architecture-vfs--gestion-des-sources)
-7. [Noyau d'Introspection Binaire](#7-noyau-dintrospection-binaire--recherche)
-8. [Pilotage Multi-Toolchain](#8-pilotage-multi-toolchain--extensions)
-9. [Cycle de Développement & Projets](#9-cycle-de-développement--types-de-projets)
-10. [Variables de Substitution](#10-variables-de-substitution-dynamiques)
-11. [Téléchargements](#11-téléchargements--distribution-licence-community)
+1. Introduction Technique
+2. Modèle de Distribution & Soutien LABS 351
+3. Infrastructure de Calcul AETHER Privée
+4. Architecture Découplée & Catalogue de Services
+5. Le Trampoline : Surveillance & Diagnostic
+6. Architecture VFS & Gestion des Sources
+7. Noyau d'Introspection Binaire & Empreinte Machine
+8. Pilotage Multi-Toolchain Asynchrone
+9. Cycle de Développement & Types de Projets
+10. Variables de Substitution Dynamiques
+11. Téléchargements & Mode Nomade
 
+---
 
 ## 1. Introduction Technique
-**WeARM®** est un contrôleur de flux binaire dynamique et évolutif, ainsi qu'un environnement de prototypage haute performance pour l'assembleur bas niveau (ARM64 et x86_64).
-Conçu pour les entreprises, les industries de haute technologie et le secteur de l'IoT, **WeARM®** automatise la complexité des chaînes d'outils de compilation croisée. Il permet une transition fluide de la conception algorithmique en assembleur vers les environnements de production industriels.
+LABS 351 [SN] est un contrôleur de flux binaire dynamique et évolutif, ainsi qu'un environnement de prototypage haute performance pour l'assembleur bas niveau (ARM64, x86_64 et RISC-V). Conçu pour la recherche microarchitecturale, les industries de haute technologie et le secteur de l'IoT, LABS 351 [SN] automatise la complexité des chaînes d'outils de compilation croisée. Il permet une transition fluide de la conception algorithmique en assembleur vers les environnements de production industriels sans nécessiter de configuration logicielle lourde.
 
 ---
 
-## 2. Modèle de Licence
-**WeARM®** est distribué selon plusieurs paliers afin de s'adapter aux besoins des utilisateurs :
-- **Licence Community** : Version gratuite destinée à l'apprentissage, aux étudiants et aux développeurs indépendants. Elle inclut les fonctionnalités essentielles du contrôleur de flux et du VFS.
-- **Licences Professionnelles** : Versions étendues pour l'industrie incluant des moteurs de performance avancés et des outils d'analyse critiques.
+## 2. Modèle de Distribution & Soutien LABS 351
+LABS 351 [SN] adopte une philosophie de distribution hybride pour protéger ses innovations tout en servant la communauté :
+
+* **Licence Community (SDK Public)** : Version d'accès gratuite destinée à l'apprentissage, aux étudiants et aux ingénieurs indépendants. Elle expose les en-têtes d'interface (MIT) et permet de manipuler les fonctionnalités essentielles du contrôleur de flux et du système de fichiers virtuel (VFS).
+* **Soutien Financement Participatif (1 € / mois)** : Si LABS 351 vous évite l'enfer des Makefiles et accélère vos maquettages, vous pouvez soutenir le laboratoire via le bouton **Sponsor** en haut du dépôt. 100% de ce micro-don est reversé à la R&D du projet (0% de commission GitHub).
+* **Licences Professionnelles (AETHER Engine)** : Versions étendues pour l'industrie, incluant nos moteurs de performance propriétaires et nos outils d'analyse critique sous contrat de licence utilisateur final (EULA).
 
 ---
 
-## 3. Infrastructure de Calcul WeARM® AETHER
-*Note : Technologie disponible exclusivement dans les versions Pro et supérieures.*
+## 3. Infrastructure de Calcul AETHER Privée
+> [!NOTE]
+> Technologie disponible exclusivement dans le framework interne et les modules professionnels haut de gamme.
 
-Le Core de **WeARM®** est propulsé par AETHER, une infrastructure de calcul propriétaire conçue pour l'exécution massivement parallèle et la suppression des goulots d'étranglement mémoires traditionnels.
+Le cœur de calcul de LABS 351 [SN] est propulsé par l'infrastructure AETHER, une architecture propriétaire conçue pour l'exécution massivement parallèle et la suppression des goulots d'étranglement mémoire traditionnels :
 
-- **Souveraineté Mémoire (O(1))** : Contrairement aux gestions de tas (Heap) standards, AETHER utilise un moteur d'allocation déterministe. Chaque objet `we::Managed` bénéficie d'un accès instantané à la ressource, garantissant une fluidité constante même sous une charge de calcul extrême.
-- **Déterminisme Temporel** : Le cycle de vie complet d'une session de calcul (Initialisation, Allocation de 100 objets Managed, Traitement et Destruction) est stabilisé à une moyenne de 11,7 microsecondes. Cette précision garantit une réactivité prédictible, indispensable pour l'analyse chirurgicale des flux d'instructions ARM64 et x86_64.
-- **Optimisation de la Barrière Silicium** : AETHER maximise la localité spatiale en alignant dynamiquement les structures de données sur l'architecture interne du processeur. Le moteur réduit drastiquement les cycles d'attente (Wait States) en optimisant les interactions avec les caches de données et les unités de gestion mémoire (MMU) du CPU. **En garantissant que les instructions séquentielles sont physiquement contiguës en mémoire, cette architecture élimine efficacement les "Cache Miss" L1 lors du flux d'exécution.**
+* **Souveraineté Mémoire ($O(1)$)** : Contrairement aux gestions de tas (Heap) standards qui provoquent des allocations dynamiques et de la fragmentation, AETHER s'appuie sur un modèle de dalles contiguës (Slabs). Chaque objet bénéficie d'un accès instantané et déterministe à la ressource.
+* **Déterminisme Temporel** : Le cycle de vie complet d'une session de calcul (Initialisation, allocation de 100 structures de désassemblage alignées, traitement et destruction) est stabilisé à une moyenne de 11,7 microsecondes, garantissant une réactivité prédictible pour l'analyse des flux d'instructions.
+* **Optimisation de la Barrière Silicium** : Maximisation de la localité spatiale en alignant dynamiquement les structures sur les lignes de cache L1/L2 du CPU (structures mesurant exactement 64 octets). Cette architecture élimine efficacement les *Cache Miss* lors du flux d'exécution en maintenant les instructions physiquement contiguës en mémoire.
 
 ---
 
-## 4. Architecture Découplée & Plugins de Précision
-L'intelligence de **WeARM®** ne repose pas sur un bloc monolithique, mais sur une architecture modulaire où les composants critiques sont externalisés et substituables.
-- **Moteurs d'Analyse Distribués** : Le moteur de désassemblage (basé sur Capstone), le Highlighting et les suggestions d'instructions opèrent sous forme de plugins autonomes.
-- **SDK & Évolutivité (v3.6RC)** : Cette architecture permet aux industries d'intégrer leurs propres moteurs. Le plugin 'core.wearm.engine.capstone' sera disponible sous licence MIT pour servir de modèle de substitution.
-- **Moteur de Scripting LUA** : Intégration native du loader 'com.wearm.core.loader.lua'. Il permet l'extension de fonctionnalités via scripts LUA, offrant une alternative agile au développement C/C++.
+## 4. Architecture Découplée & Catalogue de Services
+L'intelligence de LABS 351 [SN] repose sur un bus de communication asynchrone (Stateless Pipeline) où le Core ne cherche pas un binaire spécifique, mais consomme un service abstrait disponible dans le catalogue :
+
+* **Moteurs d'Analyse Distribués** : Le désassemblage (Capstone), le Highlighting et les suggestions opèrent sous forme de boîtes noires interchangeables définies par leur clé de routage (tag).
+* **Substitution Transparente (Hot-Swapping)** : L'hôte est totalement agnostique. Vous pouvez modifier un champ dans votre fichier de configuration `custom.json` pour remplacer instantanément un plugin C++ natif du Core par un script Lua remplissant le même contrat d'interface (Entrée/Sortie via conteneurs `QVariant`).
+* **Modèle MIT** : Le plugin de référence `org.labs351.engine.capstone` est fourni en open source pour servir de modèle d'intégration de service.
 
 ---
 
 ## 5. Le Trampoline : Surveillance & Diagnostic
-L’exécution est encapsulée dans une couche propriétaire (Trampoline). Elle garantit une sécurité maximale et un débogage chirurgical.
-- **Analyseur de Conformité ABI** : Surveillance active des conventions d'appel. Toute violation des registres non-volatils déclenche une alerte immédiate.
-- **Introspection Multimédia** : Affichage temps réel des registres SSE (x86) et NEON (ARM), essentiel pour l'optimisation de haute performance.
-- **Réconciliation de Crash** : Le moteur calcule l'offset statique en cas d'erreur fatale et pointe la ligne source fautive directement dans l'éditeur.
+L’exécution du code assemblé est encapsulée dans une couche d'abstraction propriétaire baptisée Trampoline, offrant un débogage chirurgical et une sécurité maximale :
+
+* **Analyseur de Conformité ABI** : Surveillance active et stricte des conventions d'appel selon la plateforme cible. Toute violation ou altération des registres non-volatils déclenche une alerte immédiate.
+* **Introspection Vectorielle** : Affichage en temps réel et au cycle près de l'état des registres SSE/AVX (x86) et NEON (ARM).
+* **Réconciliation de Crash** : En cas d'erreur fatale ou de faute de page dans le bac à sable, le moteur calcule l'offset statique exact et pointe la ligne source fautive directement dans l'éditeur de l'IHM.
 
 ---
 
 ## 6. Architecture VFS & Gestion des Sources
-**WeARM®** repose sur une couche d'abstraction propriétaire : le système de fichiers virtuel (VFS). Cette technologie garantit l'intégrité totale de vos actifs numériques.
-- **Importation Sécurisée** : **WeARM®** ne travaille jamais sur vos fichiers originaux. Lors de l'importation, le VFS crée une copie exacte dans un dossier projet dédié.
-- **Étanchéité (Sandbox)** : Vous pouvez modifier, tester et crash-tester votre code sans jamais altérer vos sources de référence. Le dossier caché `Work/` redirige automatiquement les opérations de fichier relatives vers cette zone sécurisée.
-- **Structure du Projet** :
-    - `src/` : Dossier racine pour vos fichiers sources (.s, .asm). Virtualisé et persistant.
-    - `headers/` : Centralise les fichiers d'en-tête (.h, .inc) pour la résolution automatique des dépendances.
-    - `build/` : Zone de sortie volatile vidée à chaque début de build (.o, .exe, .dll, .a, .dylib).
-    - `Work/` : (Caché) Couche d'exécution interne sandboxée.
+LABS 351 [SN] repose sur un système de fichiers virtuel (VFS) étanche qui isole vos actifs numériques de bout en bout :
+
+* **Importation Sécurisée & Redirection** : Le Core ne travaille jamais directement sur vos fichiers originaux. Lors de l'ouverture d'un projet, le VFS duplique les ressources et crée automatiquement les répertoires obligatoires requis par l'application. Le dossier masqué `Work/` redirige de manière transparente toutes les opérations d'écriture relatives.
+* **Étanchéité (Sandbox)** : Vous pouvez modifier, compiler et crash-tester votre assembleur sans jamais altérer vos sources de référence sur le disque dur.
+* **Structure Normalisée du Projet** :
+  * `src/` : Dossier racine virtualisé pour vos fichiers sources (.s, .asm).
+  * `headers/` : Centralise les fichiers d'en-tête (.h, .inc) pour la résolution automatique des dépendances.
+  * `build/` : Zone de sortie volatile vidée à chaque début de build contenant vos fichiers objets et binaires (.o, .exe, .dll, .a, .dylib).
+  * `Work/` : (Masqué) Couche d'exécution interne sandboxée.
 
 ---
 
 ## 7. Noyau d'Introspection Binaire & Recherche
-**WeARM®** déconstruit le code pour identifier les structures machine réelles avec une précision absolue.
-- **Parsing Haute Fidélité** : Analyse native des formats PE, COFF et ELF. Il cartographie les segments directement depuis le binaire assemblé. Cette introspection s'appuie sur nos propres moteurs de parsing entièrement autonomes : **WeARM®** ne dépend d'aucune API système et reste insensible aux mises à jour ou modifications des bibliothèques de l'OS.
-- **Scoring Intelligence** : Détection automatique du point d’entrée garantissant un linking correct sans besoin de symboles explicites de la part de l'utilisateur.
-- **Innovation Windows** : Outrepasse les limites natives en résolvant les liaisons complexes et l'extraction des symboles sans usage de fichiers .def ou de directives `__declspec`.
-- **Recherche Universelle** : Recherche active après exécution utilisant l'extraction des symboles du projet complet. Détection des conflits (Duplicate Labels) et Quick-Jump vers l'instruction.
+LABS 351 [SN] déconstruit le code produit pour identifier les structures machine réelles avec une autonomie absolue :
+
+* **Parsing Haute Fidélité Indépendant** : Analyse native des formats PE, COFF et ELF. Le logiciel cartographie les segments directement depuis le binaire assemblé via ses propres parseurs autonomes. LABS 351 [SN] ne dépend d'aucune API système hôte, restant insensible aux mises à jour ou modifications des bibliothèques de l'OS.
+* **Scoring Intelligence** : Détection automatique et transparente du point d’entrée, garantissant un linkage correct sans exiger de symboles explicites de la part de l'utilisateur.
+* **Innovation Windows** : Outrepasse les limites natives en résolvant les liaisons complexes et l'extraction des symboles sans usage de fichiers de définitions (.def) ou de directives de compilation tierces.
+* **Recherche Universelle** : Analyse active post-exécution sur l'ensemble du projet avec détection des conflits d'étiquettes (Duplicate Labels) et Quick-Jump instantané vers l'instruction coupable.
 
 ---
 
-## 8. Pilotage Multi-Toolchain & Extensions
-Couche d'abstraction intelligente entre l'utilisateur et les outils de compilation (Toolchains).
-- **Agnosticisme des Toolchains** : Drivers intégrés pour NASM, FASM, GNU AS et CLANG. Le passage d'un moteur d'assemblage à un autre s'effectue sans aucune modification des sources originales ni reconfiguration des scripts de build. **WeARM®** assure la cohérence des paramètres d'entrée/sortie quel que soit l'outil piloté.
-- **Injection d'Environnement** : **WeARM®** manipule dynamiquement les variables d'environnement système pour garantir que les outils externes "voient" le VFS sans configuration manuelle.
-- **Driver de Liaison Hybride** : Sélection automatique entre linkers bas niveau (ld, lld) et drivers complexes (Clang) pour l'automatisation des SDK (UCRT, libSystem).
-- **Extensions Réseau** : L'inclusion de modules comme 'network.http' démontre la capacité d'extension du Core pour la communication et la télémétrie.
+## 8. Pilotage Multi-Toolchain Asynchrone
+Une couche d'abstraction intelligente s'interpose entre l'utilisateur et les chaînes de compilation :
+
+* **Agnosticisme des Toolchains** : Intégration de drivers pour NASM, FASM, GNU AS et CLANG. Le passage d'un moteur d’assemblage à un autre se fait à la volée dans l’IHM sans modifier le code source original.
+* **Scan Automatique & Forçage Manuel** : Un plugin natif recherche de manière asynchrone à chaque démarrage l'emplacement des outils système ou installés (LLVM, Clang, Make, Git, Windows SDK). L'utilisateur peut à tout moment forcer l'usage d'un répertoire spécifique dans l'IHM pour y injecter une toolchain croisée isolée.
+* **Driver de Liaison Hybride** : Sélection automatique entre les linkers bas niveau (ld, lld) et les drivers complexes (Clang) pour l'automatisation de l'accès aux SDK système (UCRT, libSystem).
 
 ---
 
 ## 9. Cycle de Développement & Types de Projets
-- **PROJET : Fonction Isolée (PROJ_ISO / Mode PIC)** : Validation d'une routine de calcul. Vérification stricte de l'ABI et exécution sans crash. Génère du code indépendant de la position prêt pour l'injection dynamique.
-- **PROJET : Application Exécutable (PROJ_EXE)** : Finalisation du logiciel pour une exécution directe par l'OS. Résolution des dépendances et configuration du point d'entrée.
-- **PROJET : IoT & Embarqué (PROJ_BARE)** : Développement de micro-kernels et firmwares. Mode sans bibliothèque standard (-nostdlib) pour un contrôle matériel total.
+Trois types de profils configurables permettent de segmenter vos objectifs de build :
+
+* **PROJET : Fonction Isolée (PROJ_ISO / Mode PIC)** : Conçu pour la validation d'une routine de calcul isolée. Le système génère du code indépendant de la position (Position Independent Code), prêt pour l'injection dynamique, avec vérification stricte de l'ABI.
+* **PROJET : Application Exécutable (PROJ_EXE)** : Finalisation complète d'un logiciel pour une exécution directe par l'OS hôte avec résolution des dépendances.
+* **PROJET : IoT & Embarqué (PROJ_BARE)** : Développement de micro-kernels et de firmwares pour l'embarqué. Active le mode sans bibliothèque standard (`-nostdlib`) pour un contrôle matériel total (ex: cibles RISC-V ou ARM Bare Metal).
 
 ---
 
 ## 10. Variables de Substitution Dynamiques
-Balises pour piloter vos outils personnalisés :
-- `$SRCPATH` : Chemin absolu vers le fichier source (.s).
-- `$OUTPATH` : Destination pour l'objet généré (.o).
-- `$INCDIR` : Chemin vers le dossier miroir des en-têtes (.h / .inc).
-- `$OUT` : Chemin complet du binaire final (EXE ou DLL).
-- `$OBJS` : Liste consolidée de tous les fichiers objets du projet (.o).
-- `$LIBS` : Liste des chemins vers les bibliothèques externes configurées.
+Balises d'injection utilisées pour piloter et forger vos lignes de commande d'outils personnalisés :
+
+* `$SRCPATH` : Chemin absolu vers le fichier source (.s).
+* `$OUTPATH` : Destination pour le fichier objet généré (.o).
+* `$INCDIR` : Chemin vers le dossier miroir des en-têtes (.h / .inc).
+* `$OUT` : Chemin complet du binaire final généré (EXE, DLL, A, DYLIB).
+* `$OBJS` : Liste consolidée de tous les fichiers objets actifs du projet.
+* `$LIBS` : Liste des chemins vers les bibliothèques externes configurées dans l'onglet Liaison.
 
 ---
 
-## 11. Téléchargements & Distribution (Licence Community)
-- **macOS** : [Télécharger WeARM®.dmg](https://upd.wearm.dev/get/mac) (prochainement)
-- **Windows** : [Télécharger WeARM®_Setup.exe](https://upd.wearm.dev/get/windows) (prochainement)
+## 11. Téléchargements & Mode Nomade
+LABS 351 [SN] est une application rigoureusement **portable et nomade**. Elle ne requiert aucune procédure d'installation ni de modification des registres de votre système. Il vous suffit d'extraire l'archive pour exécuter le cockpit de développement.
 
-© 2026 **WeARM®** Core™ – All rights reserved. Proprietary Technology.
+* **macOS (Apple Silicon / Intel)** : `LABS351_Suite_Mac.zip` *(Disponible dès validation du contrat EULA)*
+* **Windows (x64 / LLVM)** : `LABS351_Suite_Win.zip` *(Disponible dès validation du contrat EULA)*
+
+---
+© 2026 LABS 351 [SN] – All rights reserved. Proprietary Technology.
