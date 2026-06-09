@@ -4,11 +4,13 @@ CRITICAL NOTICE – EXPERIMENTAL SOFTWARE
 
 LABS 351 is an experimental software laboratory intended for low-level systems development, binary analysis, operating systems exploration, computer architecture learning, and research activities.
 
-The User acknowledges that LABS 351 is a research and experimentation platform (Version 3.51 RC) operating close to hardware, microarchitectural, and system layers. It carries inherent risks of hardware crashes, infinite loops, processor saturation, silicon deterioration related to native code execution via trampoline mechanisms, system instability, or critical data loss.
+The User acknowledges that LABS 351 is a research and experimentation platform (Version 3.51 RC) operating close to hardware, microarchitectural, and system layers. 
+It carries inherent risks of hardware crashes, infinite loops, processor saturation, silicon deterioration related to native code execution via trampoline mechanisms, system instability, or critical data loss.
 
 The User confirms that they are acting as a developer, researcher, student, educator, or technically competent individual aware of the risks associated with low-level software experimentation and agrees to use LABS 351 exclusively in isolated, controlled, educational, research, or testing environments.
 
-LABS 351 is a trademark of its Owner. The trademark is currently pending registration.
+LABS 351 is a trademark of its Owner. 
+The trademark is currently pending registration.
 
 All source code, binaries, algorithms, documentation, technical concepts, interfaces, and associated materials are protected by intellectual property laws and remain the exclusive property of the Owner (hereafter referred to as "the Owner", Mr. Nasser SAÏDI).
 
@@ -25,28 +27,38 @@ Commercial, industrial, governmental, consulting, managed services, or revenue-g
 
 2. INTELLECTUAL PROPERTY RIGHTS AND RESTRICTIONS
 All rights, title, and interest in LABS 351, including but not limited to its binaries, architecture, algorithms, internal introspection mechanisms, dynamically fetched proprietary modules, interfaces, and documentation, remain the exclusive property of the Owner.
-The User shall not reverse engineer, decompile, or disassemble the software except where strictly permitted by applicable law. Any use of LABS 351 to analyze or introspect its own proprietary binaries or dynamically fetched modules constitutes a material breach of this agreement. The User shall not attempt to extract source code, reproduce internal logic, or create derivative competing products based upon LABS 351.
+The User shall not reverse engineer, decompile, or disassemble the software except where strictly permitted by applicable law. 
+Any use of LABS 351 to analyze or introspect its own proprietary binaries or dynamically fetched modules constitutes a material breach of this agreement. 
+The User shall not attempt to extract source code, reproduce internal logic, or create derivative competing products based upon LABS 351.
 
 3. OWNERSHIP OF USER WORK
-LABS 351 is a neutral development and experimentation environment. The User retains full ownership of all software, binaries, scripts, libraries, modifications, and outputs created using LABS 351. The software does not collect, transmit, watermark, or embed identifying information in user-generated outputs, ensuring total confidentiality for low-level system development.
+LABS 351 is a neutral development and experimentation environment. 
+The User retains full ownership of all software, binaries, scripts, libraries, modifications, and outputs created using LABS 351. 
+The software does not collect, transmit, watermark, or embed identifying information in user-generated outputs, ensuring total confidentiality for low-level system development.
 
 4. USER RESPONSIBILITY
-The User is solely responsible for compliance with applicable local and international laws, third-party software licenses, and intellectual property regulations. LABS 351 is a technical tool. The Owner does not supervise, monitor, or control user activity.
+The User is solely responsible for compliance with applicable local and international laws, third-party software licenses, and intellectual property regulations. 
+LABS 351 is a technical tool. The Owner does not supervise, monitor, or control user activity.
 
 5. PROHIBITED ACTIVITIES
 The User agrees not to use LABS 351 for unlawful purposes, including malware or ransomware development, unauthorized system intrusion, intellectual property theft, circumvention of security measures (DRM), illegal reverse engineering activities, or unauthorized access to third-party systems.
 
 6. DISCLAIMER OF WARRANTIES
-LABS 351 is provided "AS IS" and "AS AVAILABLE", without any warranty of any kind. The Owner disclaims all warranties, including but not limited to merchantability, fitness for a particular purpose, uninterrupted operation, absence of defects, security or reliability.
+LABS 351 is provided "AS IS" and "AS AVAILABLE", without any warranty of any kind. 
+The Owner disclaims all warranties, including but not limited to merchantability, fitness for a particular purpose, uninterrupted operation, absence of defects, security or reliability.
 
 7. LIMITATION OF LIABILITY
-To the maximum extent permitted by applicable law, the Owner shall not be liable for any damages arising from the use or inability to use the software, including system crashes, infinite loops, processor or silicon degradation, data loss within the host system or the Virtual File System (VFS), hardware or software failures, performance degradation, or interruption of activity. The maximum aggregate liability of the Owner for any claim related to this free software shall be strictly capped at zero euros (0.00 EUR).
+To the maximum extent permitted by applicable law, the Owner shall not be liable for any damages arising from the use or inability to use the software, including system crashes, infinite loops, processor or silicon degradation, data loss within the host system or the Virtual File System (VFS), hardware or software failures, performance degradation, or interruption of activity. 
+The maximum aggregate liability of the Owner for any claim related to this free software shall be strictly capped at zero euros (0.00 EUR).
 
 8. THIRD-PARTY COMPONENTS
-Third-party components remain governed by their respective licenses. Their integration does not alter or affect the proprietary and closed-source status of the core LABS 351 system.
+Third-party components remain governed by their respective licenses. 
+Their integration does not alter or affect the proprietary and closed-source status of the core LABS 351 system.
 
 9. SOFTWARE ARCHITECTURE AND DYNAMIC MODULES NOTICE
-LABS 351 is a proprietary closed-source software system. It may optionally interface with a separate Software Development Kit (SDK) distributed under the MIT License. The MIT-licensed SDK is independent from LABS 351 and does not extend, modify, or affect the licensing terms of the proprietary LABS 351 core system.
+LABS 351 is a proprietary closed-source software system. 
+It may optionally interface with a separate Software Development Kit (SDK) distributed under the MIT License. 
+The MIT-licensed SDK is independent from LABS 351 and does not extend, modify, or affect the licensing terms of the proprietary LABS 351 core system.
 
 10. CORPORATE TRANSITION AND TRANSFERABILITY
 The User expressly acknowledges and accepts that this agreement, along with all rights, restrictions, and obligations herein, shall automatically transfer from the Owner in his personal name to his future corporate structure (such as a French SAS) immediately upon its legal incorporation, or to any third-party legal entity in the event of a subsequent assignment or transfer of assets, without affecting the validity or terms of this license.
