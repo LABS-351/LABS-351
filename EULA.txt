@@ -86,15 +86,22 @@ The Owner shall not be liable for any damages arising from the use of the softwa
 
 Third-party components remain governed by their respective licenses.
 
-9. TERMINATION
+9. SOFTWARE ARCHITECTURE NOTICE
+
+LABS 351 is a proprietary closed-source software system.
+It may optionally interface with a separate Software Development Kit (SDK) distributed under the MIT License.
+The MIT-licensed SDK is independent from LABS 351 and does not extend, modify, or affect the licensing terms of the proprietary LABS 351 core system.
+In case of conflict, the terms of this EULA prevail for all components of LABS 351.
+
+10. TERMINATION
 
 Any violation of this agreement results in immediate termination of the license.
 
-10. GOVERNING LAW
+11. GOVERNING LAW
 
 This agreement is governed by French law.
 
-11. ENTIRE AGREEMENT
+12. ENTIRE AGREEMENT
 
 This document constitutes the entire agreement regarding LABS 351.
 
