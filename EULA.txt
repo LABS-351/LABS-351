@@ -4,59 +4,100 @@ CRITICAL NOTICE – EXPERIMENTAL SOFTWARE
 
 LABS 351 is an experimental software laboratory intended for low-level systems development, binary analysis, operating systems exploration, computer architecture learning, and research activities.
 
-The User acknowledges that LABS 351 is a research and experimentation platform (Version 3.51 RC) operating close to hardware and system layers. Its use may result in software crashes, system instability, data loss, unexpected behavior, or execution failures.
+The User acknowledges that LABS 351 is a research and experimentation platform (Version 3.51 RC) operating close to hardware and system layers. It may cause system instability, crashes, data loss, or unexpected behavior.
 
-The User confirms they are acting as a developer, researcher, student, educator, or technically competent individual aware of these risks and agrees to use LABS 351 exclusively in isolated, controlled, educational, research, or testing environments.
+The User confirms that they are acting as a developer, researcher, student, educator, or technically competent individual aware of the risks associated with low-level software experimentation and agrees to use LABS 351 exclusively in isolated, controlled, educational, research, or testing environments.
 
-LABS 351 is a trademark of its Owner (trademark application pending registration).
+LABS 351 is a trademark application pending registration of its Owner.
 
-All source code, binaries, algorithms, internal implementations, interfaces, modules, and documentation remain the exclusive property of the Owner.
+All source code, binaries, algorithms, documentation, technical concepts, interfaces, and associated materials are protected by intellectual property laws and remain the exclusive property of the Owner (hereafter referred to as "the Owner", Mr. XXXXXXXXX).
 
 1. LICENSE GRANT AND AUTHORIZED USE
-This license grants a non-exclusive, non-transferable, revocable right to use LABS 351 free of charge for:
+
+This license grants the User a non-exclusive, non-transferable, revocable right to use LABS 351 free of charge solely for:
+
 - personal learning
 - educational activities
 - academic work
 - scientific research
 - non-commercial experimentation
+- self-training and laboratory environments
 
-Commercial or governmental use is prohibited without written authorization.
+Commercial, industrial, governmental, consulting, managed services, or revenue-generating use is prohibited without prior written authorization from the Owner.
 
 2. INTELLECTUAL PROPERTY RIGHTS
+
+All rights, title, and interest in LABS 351, including but not limited to its binaries, architecture, algorithms, internal mechanisms, interfaces, modules, and documentation, remain the exclusive property of the Owner.
+
 The User shall not:
-- reverse engineer
-- decompile
-- disassemble
-- extract source code
-- reproduce internal mechanisms
-- create derivative works that reproduce or substantially replicate the internal mechanisms of LABS 351 for competitive purposes
+- reverse engineer, decompile, or disassemble the software except where permitted by applicable law
+- attempt to extract source code
+- reproduce internal algorithms
+- create derivative competing products based upon LABS 351
 
 3. OWNERSHIP OF USER WORK
-The User retains full ownership of all outputs generated using LABS 351.
+
+LABS 351 is a neutral development and experimentation environment.
+
+The User retains full ownership of all software, binaries, scripts, libraries, modifications, and outputs created using LABS 351.
+
+The software does not collect, transmit, watermark, or embed identifying information in user-generated outputs.
 
 4. USER RESPONSIBILITY
-The User is solely responsible for compliance with applicable laws and third-party licenses.
+
+The User is solely responsible for compliance with:
+- applicable local and international laws
+- third-party software licenses
+- intellectual property regulations
+
+LABS 351 is a technical tool. The Owner does not supervise or control user activity.
 
 5. PROHIBITED ACTIVITIES
-The User agrees not to use LABS 351 for any unlawful activity, including malware development, unauthorized access, or circumvention of protections.
+
+The User agrees not to use LABS 351 for unlawful purposes, including:
+- malware or ransomware development
+- unauthorized system intrusion
+- intellectual property theft
+- circumvention of security measures
+- illegal reverse engineering activities
+- unauthorized access to third-party systems
 
 6. DISCLAIMER OF WARRANTIES
-LABS 351 is provided "AS IS" without warranties of any kind.
+
+LABS 351 is provided "AS IS" and "AS AVAILABLE", without any warranty of any kind.
+
+The Owner disclaims all warranties, including but not limited to:
+- merchantability
+- fitness for a particular purpose
+- uninterrupted operation
+- absence of defects
+- security or reliability
 
 7. LIMITATION OF LIABILITY
-The Owner shall not be liable for any damages arising from the use of LABS 351.
+
+The Owner shall not be liable for any damages arising from the use of the software, including:
+- system crashes
+- data loss
+- hardware or software failures
+- performance degradation
+- interruption of activity
 
 8. THIRD-PARTY COMPONENTS
-Third-party components remain under their respective licenses.
+
+Third-party components remain governed by their respective licenses.
 
 9. TERMINATION
-Any violation results in immediate termination of the license.
+
+Any violation of this agreement results in immediate termination of the license.
 
 10. GOVERNING LAW
-French law applies.
+
+This agreement is governed by French law.
 
 11. ENTIRE AGREEMENT
-This document constitutes the entire agreement between the User and the Owner.
+
+This document constitutes the entire agreement regarding LABS 351.
 
 ACCEPTANCE
-By using LABS 351, the User accepts this agreement.
+
+By using LABS 351, the User acknowledges and accepts this agreement.
