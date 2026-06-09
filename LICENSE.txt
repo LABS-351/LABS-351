@@ -1,18 +1,25 @@
-LABS 351 SOFTWARE LICENSE
+LABS 351 – SOFTWARE LICENSE
 
-Version 3.51 RC
+This software is provided free of charge for personal, educational, academic, research, and non-commercial experimental use only.
 
-This software is provided free of charge for:
-
-- personal use
-- education
-- academic research
+Authorized use includes:
+- personal learning
+- educational activities
+- academic work
+- scientific research
 - non-commercial experimentation
+- laboratory and development environments
 
-Commercial use, redistribution, or resale is prohibited without prior written authorization.
+Any commercial use, including but not limited to:
+- production systems
+- paid services
+- consulting
+- resale
+- managed services
+- government or defense operational use
 
-This license does not grant ownership rights.
+is strictly prohibited without prior written authorization from the Owner.
 
-Full terms are defined in EULA.txt.
+The User is granted a non-exclusive, non-transferable, revocable license to use this software under the conditions described in the EULA.
 
-Copyright © 2026 XXXXXXXXX
+All rights not expressly granted are reserved by the Owner.
