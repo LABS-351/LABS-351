@@ -2,9 +2,17 @@ Copyright © 2026 XXXXXXXXX
 
 All Rights Reserved.
 
-LABS 351 is proprietary software.
+LABS 351, including its binaries, architecture, algorithms, internal implementations, interfaces, modules, and documentation, is protected by French and international intellectual property laws.
 
-LABS 351™ is a trademark or pending trademark of its Owner.
+The software remains the exclusive property of its Owner.
 
-Author: XXXXXXXXX  
+No ownership rights are transferred through download, installation, or use.
+
+Use of LABS 351 is subject to LICENSE.txt and EULA.txt.
+
+Unauthorized reproduction, redistribution, or derivative exploitation is prohibited.
+
+LABS 351 is a trademark of its Owner (trademark application pending registration).
+
+Author: XXXXXXXXX
 Country: France
