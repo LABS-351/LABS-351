@@ -1,57 +1,48 @@
 # LABS 351
-
-Experimental Low-Level Systems Laboratory
+### Experimental Low-Level Systems Laboratory
 
 ## Overview
-
 LABS 351 is an experimental software laboratory focused on:
-- Operating systems exploration
-- Bare-metal development
-- Computer architecture experimentation
-- Binary analysis
-- Systems programming
-- Research and education
+* Operating systems exploration
+* Bare-metal development
+* Computer architecture experimentation
+* Binary analysis
+* Systems programming
+* Research and education
 
 ## Intended Audience
-
-- Students
-- Educators
-- Researchers
-- Systems developers
-- Low-level computing enthusiasts
+* Students
+* Educators
+* Researchers
+* Systems developers
+* Low-level computing enthusiasts
 
 ## Usage Scope
-
 This software is provided for:
-- Personal use
-- Educational purposes
-- Academic work
-- Research
-- Non-commercial experimentation
+* Personal use
+* Educational purposes
+* Academic work
+* Research
+* Non-commercial experimentation
 
-Commercial, industrial, governmental, or revenue-generating use is prohibited without authorization.
+*Commercial, industrial, governmental, or revenue-generating use is prohibited without prior written authorization.*
 
 ## Experimental Nature
-
 LABS 351 operates close to system and hardware layers and may cause:
-- System instability
-- Crashes
-- Data loss
-- Unexpected execution behavior
+* System instability
+* Crashes
+* Data loss (including within the Virtual File System)
+* Unexpected execution behavior
 
-Use only in controlled environments.
+**Use only in controlled, isolated, or testing environments.**
 
 ## Legal
-
 This software is governed by:
-- LICENSE.txt
-- EULA.txt
-- COPYRIGHT.txt
+* `LICENSE.txt`
+* `EULA.txt`
+* `COPYRIGHT.txt`
 
-By using this software, you accept these terms.
+By using this software, you accept these terms in full.
 
 ## Copyright
-
-Copyright © 2026 XXXXXXXXX
-
-All Rights Reserved.
+Copyright © 2026 Nasser SAÏDI. All Rights Reserved.
