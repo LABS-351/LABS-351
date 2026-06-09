@@ -2,7 +2,7 @@ LABS 351 – SOFTWARE LICENSE
 
 This software is provided free of charge for personal, educational, academic, research, and non-commercial experimental use only.
 
-You are granted a non-exclusive, non-transferable, revocable license to use LABS 351 under the following conditions:
+You are granted a non-exclusive, non-transferable, revocable license to use LABS 351 under the terms of the End User License Agreement (EULA.txt) and the following conditions:
 
 Permitted use:
 - Personal learning
@@ -13,16 +13,15 @@ Permitted use:
 - Laboratory and isolated environments
 
 Restrictions:
-- Commercial use is strictly prohibited without written authorization
-- Redistribution of modified or unmodified versions as a competing product is prohibited
-- Use in production, industrial, governmental, or revenue-generating environments is prohibited
-- Reverse engineering, decompilation, or disassembly is prohibited except where permitted by law
+- Commercial, professional, industrial, or governmental use is strictly prohibited without written authorization
+- Redistribution of modified or unmodified versions, or use to build a competing product, is strictly prohibited
+- Reverse engineering, decompilation, or disassembly of LABS 351 binaries is prohibited except where strictly permitted by law
 
 Termination:
 This license is automatically revoked in case of violation of its terms.
 
-Disclaimer:
-The software is provided "AS IS", without warranty of any kind.
+Disclaimer and Liability:
+The software is provided "AS IS", without warranty of any kind. The Owner's liability is strictly limited and capped at zero euros (0.00 EUR) as detailed in EULA.txt.
 
 Governing law:
 This license is governed by French law.
