@@ -1,20 +1,30 @@
 LABS 351 – SOFTWARE LICENSE
 
-LABS 351 is provided free of charge for personal, educational, academic, research, and non-commercial experimental use only.
+This software is provided free of charge for personal, educational, academic, research, and non-commercial experimental use only.
+
+You are granted a non-exclusive, non-transferable, revocable license to use LABS 351 under the following conditions:
 
 Permitted use:
-- personal learning
-- education
-- academic work
-- scientific research
-- non-commercial experimentation
+- Personal learning
+- Educational use
+- Academic work
+- Scientific research
+- Non-commercial experimentation
+- Laboratory and isolated environments
 
-Prohibited use:
-- commercial use
-- resale
-- integration into paid services
-- production deployment without authorization
+Restrictions:
+- Commercial use is strictly prohibited without written authorization
+- Redistribution of modified or unmodified versions as a competing product is prohibited
+- Use in production, industrial, governmental, or revenue-generating environments is prohibited
+- Reverse engineering, decompilation, or disassembly is prohibited except where permitted by law
 
-This license is non-exclusive, non-transferable, and revocable.
+Termination:
+This license is automatically revoked in case of violation of its terms.
 
-All rights not explicitly granted are reserved by the Owner.
+Disclaimer:
+The software is provided "AS IS", without warranty of any kind.
+
+Governing law:
+This license is governed by French law.
+
+By using LABS 351, you accept these terms.
