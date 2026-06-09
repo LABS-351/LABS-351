@@ -10,7 +10,7 @@ The User confirms that they are acting as a developer, researcher, student, educ
 
 END USER LICENSE AGREEMENT (EULA)
 
-LABS 351 is a trademark of its Owner.
+LABS 351 is a trademark application pending registration of its Owner.
 
 All source code, binaries, algorithms, documentation, technical concepts, interfaces, and associated materials are protected by intellectual property laws and remain the exclusive property of the Owner (hereafter referred to as "the Owner", Mr. XXXXXXXXX).
 
