@@ -2,10 +2,14 @@ Copyright © 2026 XXXXXXXXX
 
 All Rights Reserved.
 
-LABS 351 and its materials are protected by intellectual property law.
+LABS 351, including its source code, binaries, architecture, algorithms, documentation, interfaces, and related materials, is protected under applicable intellectual property laws.
 
-Ownership remains with the author.
+All rights remain exclusively reserved by the Owner.
 
-No rights are transferred except those explicitly granted in LICENSE.txt.
+LABS 351 is a trademark application pending registration.
 
-Use is subject to LICENSE.txt and EULA.txt.
+No rights are transferred to the User by downloading, installing, or using the software.
+
+Use of the software is subject to LICENSE.txt and EULA.txt.
+
+Unauthorized reproduction, redistribution, or derivative commercial use is strictly prohibited.
