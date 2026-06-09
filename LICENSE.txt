@@ -2,59 +2,17 @@ LABS 351 SOFTWARE LICENSE
 
 Version 3.51 RC
 
-1. GRANT OF LICENSE
+This software is provided free of charge for:
 
-The Owner grants the User a limited, non-exclusive, non-transferable, revocable license to use LABS 351 solely for:
+- personal use
+- education
+- academic research
+- non-commercial experimentation
 
-* personal learning
-* education
-* academic activities
-* research
-* non-commercial experimentation
+Commercial use, redistribution, or resale is prohibited without prior written authorization.
 
-2. PROHIBITED USES
+This license does not grant ownership rights.
 
-Without prior written authorization from the Owner, the User shall not use LABS 351 for:
-
-* commercial activities
-* consulting services
-* managed services
-* government projects
-* military projects
-* industrial production
-* commercial software development
-* revenue-generating operations
-
-3. INTELLECTUAL PROPERTY
-
-All rights, title, and interest in LABS 351 remain the exclusive property of the Owner.
-
-Nothing in this License transfers ownership of the software.
-
-4. USER-GENERATED OUTPUT
-
-Software, binaries, scripts, research, and technical work produced by the User remain the property of the User.
-
-LABS 351 claims no ownership over User-generated outputs.
-
-5. NO WARRANTY
-
-LABS 351 is provided "AS IS" without warranties of any kind.
-
-6. LIMITATION OF LIABILITY
-
-The Owner shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use of the software.
-
-The maximum financial liability of the Owner shall not exceed the amount paid by the User, which for the Community Research Edition is €0.00.
-
-7. TERMINATION
-
-Violation of this License immediately terminates all rights granted herein.
-
-8. GOVERNING LAW
-
-This License is governed by French law.
-
-All Rights Reserved.
+Full terms are defined in EULA.txt.
 
 Copyright © 2026 XXXXXXXXX
