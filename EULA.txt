@@ -8,7 +8,7 @@ The User acknowledges that LABS 351 is a research and experimentation platform (
 
 The User confirms that they are acting as a developer, researcher, student, educator, or technically competent individual aware of the risks associated with low-level software experimentation and agrees to use LABS 351 exclusively in isolated, controlled, educational, research, or testing environments.
 
-LABS 351 is a trademark application pending registration of its Owner.
+LABS 351 is a trademark of its Owner. The trademark is currently pending registration.
 
 All source code, binaries, algorithms, documentation, technical concepts, interfaces, and associated materials are protected by intellectual property laws and remain the exclusive property of the Owner (hereafter referred to as "the Owner", Mr. XXXXXXXXX).
 
