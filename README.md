@@ -10,6 +10,15 @@ LABS 351 is an experimental software laboratory focused on:
 * Systems programming
 * Research and education
 
+## Latest Release (v3.5RC)
+### 🔒 Integrity Verification (SHA-256)
+Before running the application, you can verify the integrity of your downloaded files:
+
+*   **macOS (DMG):** `shasum -a 256 Labs351_v3.5RC.dmg`
+    `INSERT_MAC_HASH_HERE`
+*   **Windows (ZIP):** `Get-FileHash .\Labs351_v3.5RC.zip -Algorithm SHA256`
+    `INSERT_WINDOWS_HASH_HERE`
+
 ## Intended Audience
 * Students
 * Educators
